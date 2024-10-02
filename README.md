@@ -8,8 +8,16 @@
     algorithm's true run time would be. For example, if an algorithms
     true run time resembles something like $\Theta(n^2 + 5n + 23)$,
     it is often simplified into the more general term of $\Theta(n^2)$.
-  2) Ipsum...
-  3) Something...
+  2) If a complexity has a loose bound, it possible that the difference
+    between the loose bound and the true time complexity is so large that 
+    it could be misleading to the reader.
+  3) Another thing is what type of machine that algorithms are run on. Often 
+    times the kind of machine that an algorithm is run on matters quite a lot. 
+    For example, when running merge sort on an arduino versus running it on one 
+    of the computers at the Cheyenne super computing center, the amount of time 
+    it takes to execute is wildly different. Asymptotic analysis is relative
+    and won't always produce exact results. It's almost like a non-exact 
+    science.
 
 
 
@@ -21,7 +29,19 @@
   Binary Search Trees have an asymptotic complexity of $\Theta(logn)$ because of
   it's divide-and-conquer behavior through the tree. Since the input size of 
   1,000 results in the algorithm taking 5 seconds to execute, we can state
-  mathematically that $T(1,000) = 5 sec$. TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  mathematically that:
+  
+  $$c*log{_2}(1,000) = 5 seconds$$
+
+  Solve for c:
+
+  $$c = 5 seconds / log{_2}(1000) = 0.5017$$
+
+  Plug back in for when n = 10000:
+
+  $$0.5017 * log{_2}(10000) = 6.6667$$
+
+  It will take about 6.6667 seconds to complete (or 6 and two thirds of a second) to go through a tree of 10000 elements..
 
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
@@ -37,7 +57,12 @@
     for does not appear in the tree, the same thing happens where every
     element in the tree is access, meaning the time complexity
     would not be $\Theta(logn)$, but instead it is $\Theta(n)$.
-  3) Lorem...
+  3) Mentioned back in the first problem of this assignment  is also 
+    the fact that it could be a slower machine and functions differently 
+    than most. As mentioned in class, timing algorithms with timers 
+    always leads to unexpected results. Asymptotic analysis is to get 
+    a general idea of how fast an algorithm can run, not to provide a 
+    precise formula for it.
 
 Add your answers to this markdown file.
 
