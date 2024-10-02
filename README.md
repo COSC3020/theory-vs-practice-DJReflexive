@@ -41,30 +41,29 @@
 
   $$0.5017 * log{_2}(10000) = 6.6667$$
 
-  It will take about 6.6667 seconds to complete (or 6 and two thirds of a second) to go through a tree of 10000 elements..
+  It will take about 6.6667 seconds to complete (or 6 and two thirds of a second) 
+  to go through a tree of 10000 elements..
 
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-  1) One possible scenerio is that the algorithm executes a worst-case 
-    situation. If the element that is being search for happens to be
-    the last element to be searched in the tree, then this means the 
-    algorithm has gone through every element, meaning the time complexity
-    would not be $\Theta(logn)$, but instead it is $\Theta(n)$.
-  2) Similarly to the first scenerio, if the elemenent being searched
-    for does not appear in the tree, the same thing happens where every
-    element in the tree is access, meaning the time complexity
-    would not be $\Theta(logn)$, but instead it is $\Theta(n)$.
+  1) A possible scenerio is that the asymptotic analysis is often simplified
+    to ignore constants. However, in reality, these constants do matter when
+    it comes to the final run time of a program. It is simplified to give the
+    reader an idea of how the algorithm *could* behave, but does not show the
+    specific numbers and calculations involved.
+  2) One obvious scenario would be that the asymptotic analysis is a 
+    loose bound or is just incorrect for the algorithm. We don't see that 
+    actual code for this algorithm, and perhaps it is doing extra
+    operations that would increase the amount of time.
   3) Mentioned back in the first problem of this assignment  is also 
     the fact that it could be a slower machine and functions differently 
     than most. As mentioned in class, timing algorithms with timers 
     always leads to unexpected results. Asymptotic analysis is to get 
     a general idea of how fast an algorithm can run, not to provide a 
     precise formula for it.
-
-Add your answers to this markdown file.
 
 
 
