@@ -54,10 +54,10 @@
     it comes to the final run time of a program. It is simplified to give the
     reader an idea of how the algorithm *could* behave, but does not show the
     specific numbers and calculations involved.
-  2) One obvious scenario would be that the asymptotic analysis is a 
-    loose bound or is just incorrect for the algorithm. We don't see that 
-    actual code for this algorithm, and perhaps it is doing extra
-    operations that would increase the amount of time.
+  2) A subtle thing that might be missed when thinking about asymptotic 
+    complexity is the fact that computers can only run so many processes at 
+    once. It is possible other programs on the computer are halting the 
+    algorithm from executing, causing a result that takes 100 seconds.
   3) Mentioned back in the first problem of this assignment  is also 
     the fact that it could be a slower machine and functions differently 
     than most. As mentioned in class, timing algorithms with timers 
