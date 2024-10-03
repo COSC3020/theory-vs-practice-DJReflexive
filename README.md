@@ -49,16 +49,18 @@
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-  1) A possible scenerio is that the asymptotic analysis is often simplified
-    to ignore constants. However, in reality, these constants do matter when
-    it comes to the final run time of a program. It is simplified to give the
-    reader an idea of how the algorithm *could* behave, but does not show the
-    specific numbers and calculations involved.
+  1) One things that we mentioned in class is what the content of tree is. If 
+    the content is strings, for example, and most strings a short style text, 
+    like a Haiku, but, perhaps there a few strings that contain an entire 
+    novel. Being able to check for equality with a binary search tree, this 
+    could take some time if it comes across a few strings that contain a novel. 
+    Perhaps there are certain strings that need processing in order to be 
+    compared, and similar things to this idea.
   2) A subtle thing that might be missed when thinking about asymptotic 
     complexity is the fact that computers can only run so many processes at 
     once. It is possible other programs on the computer are halting the 
     algorithm from executing, causing a result that takes 100 seconds.
-  3) Mentioned back in the first problem of this assignment  is also 
+  3) Mentioned back in the first problem of this assignment is also 
     the fact that it could be a slower machine and functions differently 
     than most. As mentioned in class, timing algorithms with timers 
     always leads to unexpected results. Asymptotic analysis is to get 
